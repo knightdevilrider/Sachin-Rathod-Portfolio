@@ -522,7 +522,7 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2 }}
-              className="absolute top-[18%] sm:top-[15%] md:top-[20%] lg:top-[25%] w-full flex flex-row justify-between items-start z-0 px-10 sm:px-12 md:px-20 lg:px-[18%] xl:px-[22%]"
+              className="absolute top-[25%] w-full flex flex-row justify-between items-start z-0 px-[10%] sm:px-[15%] md:px-[18%] lg:px-[20%] xl:px-[22%]"
             >
               <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none">
                 Hey,
@@ -533,15 +533,15 @@ export default function App() {
             </motion.div>
 
             {/* Middle Right: Specialization Accent */}
-            <div className="absolute top-[40%] sm:top-[50%] right-0 -translate-y-1/2 max-w-[100px] sm:max-w-[150px] md:max-w-[200px] hidden sm:block text-right z-30">
-              <p className="text-[7px] sm:text-[9px] md:text-[11px] font-bold text-charcoal/80 leading-relaxed uppercase tracking-tight">
-                Specialized in AI Strategy, <br className="hidden md:block" /> RAG Pipelines, and Technical <br className="hidden md:block" /> Product Management.
+            <div className="absolute top-[50%] right-0 -translate-y-1/2 max-w-[90px] xs:max-w-[100px] sm:max-w-[150px] md:max-w-[200px] text-right z-30 pr-2 sm:pr-4">
+              <p className="text-[6px] xs:text-[7px] sm:text-[9px] md:text-[11px] font-bold text-charcoal/80 leading-relaxed uppercase tracking-tight">
+                Specialized in AI Strategy, <br /> RAG Pipelines, and Technical <br /> Product Management.
               </p>
             </div>
 
             {/* Status Pill */}
-            <div className="absolute top-[40%] sm:top-[50%] left-0 -translate-y-1/2 -ml-6 sm:ml-0 z-30">
-              <div className="scale-[0.7] sm:scale-90 md:scale-100 lg:scale-110 origin-left">
+            <div className="absolute top-[50%] left-0 -translate-y-1/2 pl-2 sm:pl-4 z-30">
+              <div className="scale-[0.5] xs:scale-[0.6] sm:scale-90 md:scale-100 lg:scale-110 origin-left">
                 <StatusPill />
               </div>
             </div>
@@ -551,7 +551,7 @@ export default function App() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full scale-[1.2] sm:scale-100 max-w-full sm:max-w-[420px] md:max-w-[550px] lg:max-w-[650px] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[85vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 pt-[100px] sm:pt-0 mt-[-80px] sm:mt-0 mb-[-30px] sm:-mb-8 md:-mb-10 lg:-mb-16 pr-0 pl-[10px] sm:pl-0 mr-[20px] sm:mr-0"
+              className="relative w-full max-w-[80vw] sm:max-w-[420px] md:max-w-[550px] lg:max-w-[650px] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[85vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 mx-auto"
             >
               <img 
                 src="https://i.postimg.cc/rpZgYw6D/photoppp-1-1.png" 
@@ -564,7 +564,7 @@ export default function App() {
             </motion.div>
 
             {/* Lower Hero Typography */}
-            <div className="absolute bottom-[-75px] sm:bottom-0 lg:bottom-[20px] w-full flex flex-col md:flex-row justify-between items-end z-30 pointer-events-none pb-2 sm:pb-4 md:pb-4 lg:px-4">
+            <div className="absolute bottom-[-10px] sm:bottom-[10px] lg:bottom-[20px] w-full flex flex-row justify-between items-end z-30 pointer-events-none px-4 md:px-8">
               {/* Bottom Left: I AM SACHIN */}
               <motion.div 
                 initial={{ opacity: 0, x: -40 }}
@@ -572,7 +572,7 @@ export default function App() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-left"
               >
-                <h1 className="font-sans text-[11vw] sm:text-[10vw] md:text-[90px] lg:text-[130px] font-black leading-[0.8] tracking-[calc(-0.03em)] uppercase text-charcoal">
+                <h1 className="font-sans text-[14vw] sm:text-[10vw] md:text-[90px] lg:text-[130px] font-black leading-[0.8] tracking-[calc(-0.03em)] uppercase text-charcoal">
                   I AM <br /> SACHIN
                 </h1>
               </motion.div>
@@ -582,7 +582,7 @@ export default function App() {
                 initial={{ opacity: 0, x: 40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="text-right md:translate-y-[20px] lg:translate-y-[40px]"
+                className="text-right translate-y-[10px] md:translate-y-[20px] lg:translate-y-[40px]"
               >
                 <h3 className="font-sans text-[5vw] sm:text-[4vw] md:text-[40px] lg:text-[55px] font-black leading-[0.85] uppercase text-charcoal tracking-tighter">
                   AI <br /> PRODUCT <br /> STRATEGIST 
