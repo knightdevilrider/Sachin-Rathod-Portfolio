@@ -524,10 +524,10 @@ export default function App() {
               transition={{ duration: 1.2 }}
               className="absolute top-[18%] sm:top-[15%] md:top-[20%] lg:top-[25%] w-full flex flex-row justify-between items-start z-0 px-10 sm:px-12 md:px-20 lg:px-[18%] xl:px-[22%]"
             >
-              <h2 className="font-serif italic text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none">
+              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none">
                 Hey,
               </h2>
-              <h2 className="font-serif italic text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none pb-[10px]">
+              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none pb-[10px]">
                 there
               </h2>
             </motion.div>
