@@ -522,7 +522,7 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2 }}
-              className="absolute top-[16%] sm:top-[10%] md:top-[12%] lg:top-[18%] w-full flex flex-row justify-between items-start z-0 px-10 sm:px-12 md:px-20 lg:px-32"
+              className="absolute top-[16%] sm:top-[10%] md:top-[12%] lg:top-[18%] w-full flex flex-row justify-between items-start z-0 px-10 sm:px-12 md:px-20 lg:px-[22%] xl:px-[26%]"
             >
               <h2 className="font-serif italic text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none">
                 Hey,
@@ -551,7 +551,7 @@ export default function App() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full scale-[1.2] sm:scale-100 max-w-full sm:max-w-[420px] md:max-w-[650px] max-h-[60vh] sm:max-h-[70vh] md:max-h-none aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 pt-[100px] sm:pt-0 mt-[-80px] sm:mt-0 mb-[-30px] sm:-mb-8 md:-mb-10 pr-0 pl-[10px] sm:pl-0 mr-[20px] sm:mr-0"
+              className="relative w-full scale-[1.2] sm:scale-100 max-w-full sm:max-w-[420px] md:max-w-[550px] lg:max-w-[600px] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[75vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 pt-[100px] sm:pt-0 mt-[-80px] sm:mt-0 mb-[-30px] sm:-mb-8 md:-mb-10 lg:-mb-16 pr-0 pl-[10px] sm:pl-0 mr-[20px] sm:mr-0"
             >
               <img 
                 src="https://i.postimg.cc/rpZgYw6D/photoppp-1-1.png" 
@@ -564,7 +564,7 @@ export default function App() {
             </motion.div>
 
             {/* Lower Hero Typography */}
-            <div className="absolute bottom-[-75px] sm:bottom-0 w-full flex flex-col md:flex-row justify-between items-end z-30 pointer-events-none pb-2 sm:pb-4 md:pb-4">
+            <div className="absolute bottom-[-75px] sm:bottom-[20px] lg:bottom-[80px] w-full flex flex-col md:flex-row justify-between items-end z-30 pointer-events-none pb-2 sm:pb-4 md:pb-4 lg:px-8">
               {/* Bottom Left: I AM SACHIN */}
               <motion.div 
                 initial={{ opacity: 0, x: -40 }}
