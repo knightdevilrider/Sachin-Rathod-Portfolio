@@ -524,7 +524,7 @@ export default function App() {
               transition={{ duration: 1.2 }}
               className="absolute top-[18%] sm:top-[20%] w-full flex flex-row justify-between items-start z-0 px-[5%] sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
             >
-              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none">
+              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none -translate-x-[5vw] lg:-translate-x-[50px] xl:-translate-x-[70px]">
                 Hey,
               </h2>
               <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none pb-[10px]">
