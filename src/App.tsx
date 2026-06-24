@@ -19,7 +19,6 @@ import {
   Menu,
   X
 } from "lucide-react";
-import { useState, useEffect } from "react";
 
 // --- Components ---
 
@@ -552,7 +551,7 @@ export default function App() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full scale-[1.5] sm:scale-100 max-w-full sm:max-w-[420px] md:max-w-[650px] max-h-[60vh] sm:max-h-[70vh] md:max-h-none aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 pt-[150px] sm:pt-0 mt-[-220px] sm:mt-0 mb-[-70px] sm:-mb-8 md:-mb-10 pr-0 pl-[27px] sm:pl-0 mr-[50px] sm:mr-0"
+              className="relative w-full scale-[1.2] sm:scale-100 max-w-full sm:max-w-[420px] md:max-w-[650px] max-h-[60vh] sm:max-h-[70vh] md:max-h-none aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 pt-[100px] sm:pt-0 mt-[-80px] sm:mt-0 mb-[-30px] sm:-mb-8 md:-mb-10 pr-0 pl-[10px] sm:pl-0 mr-[20px] sm:mr-0"
             >
               <img 
                 src="https://i.postimg.cc/rpZgYw6D/photoppp-1-1.png" 
