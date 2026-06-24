@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=Playfair+Display:ital,wght@1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-warm-bg: #FDFBF7;
+  --color-warm-accent: #F9F6F0;
+  --color-charcoal: #111111;
+  --color-gold: #FFB800;
+  --color-amber-glow: rgba(255, 184, 0, 0.15);
+}
+
+@layer components {
+  .animated-text {
+    font-family: var(--font-serif);
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    animation: blinkShadow 1.5s infinite ease-in-out;
+  }
+
+  .animated-text::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FFC107; /* Vibrant yellow */
+    z-index: -1;
+    transform: translate(0, 0);
+    opacity: 0;
+    animation: shiftYellow 1.5s infinite ease-in-out;
+  }
+
+  @keyframes blinkShadow {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-2px, -3px);
+    }
+  }
+
+  @keyframes shiftYellow {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(0, 0);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(5px, 6px);
+    }
+  }
+
+  .runaway-btn {
+    transition: transform 0.1s ease-out, top 0.4s cubic-bezier(0.25, 1, 0.5, 1), left 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+}
+
+@layer base {
+  html, body {
+    @apply overflow-x-hidden max-w-full;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    @apply bg-warm-bg text-charcoal font-sans selection:bg-gold/30;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .mask-radial {
+    mask-image: radial-gradient(circle at center, black, transparent);
+  }
+
+  .radial-gradient-hero {
+    background: radial-gradient(circle at 50% 50%, var(--color-amber-glow) 0%, transparent 70%);
+  }
+}
