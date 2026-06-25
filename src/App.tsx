@@ -522,9 +522,9 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2 }}
-              className="absolute top-[18%] sm:top-[20%] w-full flex flex-row justify-between items-start z-0 px-[5%] sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
+              className="absolute top-[28%] sm:top-[20%] md:top-[18%] w-full flex flex-row justify-between items-start z-0 px-2 sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
             >
-              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none -translate-x-[5vw] lg:-translate-x-[50px] xl:-translate-x-[70px]">
+              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none -translate-x-[2vw] sm:-translate-x-[5vw] lg:-translate-x-[50px] xl:-translate-x-[70px]">
                 Hey,
               </h2>
               <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none pb-[10px]">
@@ -551,7 +551,7 @@ export default function App() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full max-w-[80vw] sm:max-w-[420px] md:max-w-[550px] lg:max-w-[650px] max-h-[60vh] sm:max-h-[70vh] md:max-h-[80vh] lg:max-h-[85vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 mx-auto"
+              className="relative w-full scale-[1.3] sm:scale-[1.15] md:scale-100 max-w-[100vw] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[650px] max-h-[75vh] sm:max-h-[80vh] md:max-h-[80vh] lg:max-h-[85vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 mx-auto mt-[50px] sm:mt-[30px] md:mt-0"
             >
               <img 
                 src="https://i.postimg.cc/rpZgYw6D/photoppp-1-1.png" 
