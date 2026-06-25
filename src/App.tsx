@@ -522,7 +522,7 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2 }}
-              className="absolute top-[50%] sm:top-[20%] md:top-[18%] w-full flex flex-row justify-between items-start z-0 px-2 sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
+              className="absolute top-[25%] sm:top-[20%] md:top-[18%] w-full flex flex-row justify-between items-start z-0 px-[4%] sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
             >
               <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none -translate-x-[2vw] sm:-translate-x-[5vw] lg:-translate-x-[50px] xl:-translate-x-[70px]">
                 Hey,
@@ -533,14 +533,14 @@ export default function App() {
             </motion.div>
 
             {/* Middle Right: Specialization Accent */}
-            <div className="absolute top-[35%] sm:top-[50%] right-0 -translate-y-1/2 max-w-[90px] xs:max-w-[100px] sm:max-w-[150px] md:max-w-[200px] text-right z-30 pr-2 sm:pr-4">
+            <div className="absolute top-[50%] right-0 -translate-y-1/2 max-w-[90px] xs:max-w-[100px] sm:max-w-[150px] md:max-w-[200px] text-right z-30 pr-2 sm:pr-4">
               <p className="text-[6px] xs:text-[7px] sm:text-[9px] md:text-[11px] font-bold text-charcoal/80 leading-relaxed uppercase tracking-tight">
                 Specialized in AI Strategy, <br /> RAG Pipelines, and Technical <br /> Product Management.
               </p>
             </div>
 
             {/* Status Pill */}
-            <div className="absolute top-[35%] sm:top-[50%] left-0 -translate-y-1/2 pl-2 sm:pl-4 z-30">
+            <div className="absolute top-[50%] left-0 -translate-y-1/2 pl-2 sm:pl-4 z-30">
               <div className="scale-[0.5] xs:scale-[0.6] sm:scale-90 md:scale-100 lg:scale-110 origin-left">
                 <StatusPill />
               </div>
@@ -564,7 +564,7 @@ export default function App() {
             </motion.div>
 
             {/* Lower Hero Typography */}
-            <div className="absolute bottom-[-5px] sm:bottom-[15px] lg:bottom-[35px] w-full flex flex-row justify-between items-end z-30 pointer-events-none px-4 md:px-8">
+            <div className="absolute bottom-0 sm:bottom-[15px] lg:bottom-[35px] w-full flex flex-row justify-between items-end z-30 pointer-events-none px-4 md:px-8">
               {/* Bottom Left: I AM SACHIN */}
               <motion.div 
                 initial={{ opacity: 0, x: -40 }}
@@ -582,7 +582,7 @@ export default function App() {
                 initial={{ opacity: 0, x: 40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="text-right translate-y-[5px] md:translate-y-[10px] lg:translate-y-[15px]"
+                className="text-right md:translate-y-[10px] lg:translate-y-[15px]"
               >
                 <h3 className="font-sans text-[5vw] sm:text-[4vw] md:text-[40px] lg:text-[55px] font-black leading-[0.85] uppercase text-charcoal tracking-tighter">
                   AI <br /> PRODUCT <br /> STRATEGIST 
