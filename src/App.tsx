@@ -522,7 +522,7 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2 }}
-              className="absolute top-[28%] sm:top-[20%] md:top-[18%] w-full flex flex-row justify-between items-start z-0 px-2 sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
+              className="absolute top-[50%] sm:top-[20%] md:top-[18%] w-full flex flex-row justify-between items-start z-0 px-2 sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
             >
               <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none -translate-x-[2vw] sm:-translate-x-[5vw] lg:-translate-x-[50px] xl:-translate-x-[70px]">
                 Hey,
@@ -533,14 +533,14 @@ export default function App() {
             </motion.div>
 
             {/* Middle Right: Specialization Accent */}
-            <div className="absolute top-[50%] right-0 -translate-y-1/2 max-w-[90px] xs:max-w-[100px] sm:max-w-[150px] md:max-w-[200px] text-right z-30 pr-2 sm:pr-4">
+            <div className="absolute top-[35%] sm:top-[50%] right-0 -translate-y-1/2 max-w-[90px] xs:max-w-[100px] sm:max-w-[150px] md:max-w-[200px] text-right z-30 pr-2 sm:pr-4">
               <p className="text-[6px] xs:text-[7px] sm:text-[9px] md:text-[11px] font-bold text-charcoal/80 leading-relaxed uppercase tracking-tight">
                 Specialized in AI Strategy, <br /> RAG Pipelines, and Technical <br /> Product Management.
               </p>
             </div>
 
             {/* Status Pill */}
-            <div className="absolute top-[50%] left-0 -translate-y-1/2 pl-2 sm:pl-4 z-30">
+            <div className="absolute top-[35%] sm:top-[50%] left-0 -translate-y-1/2 pl-2 sm:pl-4 z-30">
               <div className="scale-[0.5] xs:scale-[0.6] sm:scale-90 md:scale-100 lg:scale-110 origin-left">
                 <StatusPill />
               </div>
@@ -551,7 +551,7 @@ export default function App() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full scale-[1.3] sm:scale-[1.15] md:scale-100 max-w-[100vw] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[650px] max-h-[75vh] sm:max-h-[80vh] md:max-h-[80vh] lg:max-h-[85vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 mx-auto mt-[50px] sm:mt-[30px] md:mt-0"
+              className="relative w-full scale-[1.7] sm:scale-[1.15] md:scale-100 max-w-[100vw] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[650px] max-h-[75vh] sm:max-h-[80vh] md:max-h-[80vh] lg:max-h-[85vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 mx-auto mt-[80px] sm:mt-[30px] md:mt-0"
             >
               <img 
                 src="https://i.postimg.cc/rpZgYw6D/photoppp-1-1.png" 
