@@ -551,7 +551,7 @@ export default function App() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full scale-[1.7] sm:scale-[1.15] md:scale-100 max-w-[100vw] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[650px] max-h-[75vh] sm:max-h-[80vh] md:max-h-[80vh] lg:max-h-[85vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 mx-auto mt-[80px] sm:mt-[30px] md:mt-0"
+              className="relative w-full scale-[1.3] sm:scale-[1.15] md:scale-100 max-w-[100vw] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[650px] max-h-[75vh] sm:max-h-[80vh] md:max-h-[80vh] lg:max-h-[85vh] aspect-[4/5] md:aspect-[3.6/4] flex items-end justify-center z-10 mx-auto mt-[50px] sm:mt-[30px] md:mt-0"
             >
               <img 
                 src="https://i.postimg.cc/rpZgYw6D/photoppp-1-1.png" 
