@@ -522,9 +522,9 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2 }}
-              className="absolute top-[30%] sm:top-[20%] md:top-[18%] w-full flex flex-row justify-between items-start z-0 px-[4%] sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
+              className="absolute top-[40%] xs:top-[42%] sm:top-[20%] md:top-[18%] w-full flex flex-row justify-between items-start z-0 px-[12%] xs:px-[15%] sm:px-[15%] md:px-[20%] lg:px-[24%] xl:px-[26%]"
             >
-              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none -translate-x-[2vw] sm:-translate-x-[5vw] lg:-translate-x-[50px] xl:-translate-x-[70px]">
+              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none translate-x-0 sm:-translate-x-[5vw] lg:-translate-x-[50px] xl:-translate-x-[70px]">
                 Hey,
               </h2>
               <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none pb-[10px]">
