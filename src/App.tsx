@@ -564,7 +564,7 @@ export default function App() {
             </motion.div>
 
             {/* Lower Hero Typography */}
-            <div className="absolute bottom-[15%] xs:bottom-[18%] sm:bottom-[15px] lg:bottom-[35px] w-full flex flex-row justify-between items-end z-30 pointer-events-none px-4 md:px-8">
+            <div className="absolute bottom-[-50px] xs:bottom-[-60px] sm:bottom-[15px] lg:bottom-[35px] w-full flex flex-row justify-between items-end z-30 pointer-events-none px-4 md:px-8">
               {/* Bottom Left: I AM SACHIN */}
               <motion.div 
                 initial={{ opacity: 0, x: -40 }}
