@@ -510,12 +510,12 @@ export default function App() {
       <Navbar />
 
       {/* Hero Section */}
-      <section id="home" className="relative pt-12 sm:pt-32 pb-12 bg-warm-bg min-h-[100dvh] lg:min-h-screen flex items-start sm:items-center justify-center overflow-hidden">
+      <section id="home" className="relative pt-4 sm:pt-32 pb-4 sm:pb-12 bg-warm-bg min-h-[80dvh] sm:min-h-[100dvh] lg:min-h-screen flex items-start sm:items-center justify-center overflow-hidden">
         {/* Central Radial Glow (matching reference) */}
         <div className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[1200px] aspect-square radial-gradient-hero pointer-events-none opacity-80 z-0 scale-125 md:scale-150" />
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10 w-full h-full flex flex-col justify-start sm:justify-center pt-8 sm:pt-20 pb-24 sm:py-12 lg:ml-[212.333px] lg:mb-[1px] lg:pt-[7px]">
-          <div className="relative flex flex-col items-center justify-center min-h-[300px] sm:min-h-[450px]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10 w-full h-full flex flex-col justify-start sm:justify-center pt-0 sm:pt-20 pb-4 sm:pb-24 lg:ml-[212.333px] lg:mb-[1px] lg:pt-[7px]">
+          <div className="relative flex flex-col items-center justify-center min-h-[300px] sm:min-h-[450px] -mt-[40px] xs:-mt-[60px] sm:mt-0">
             
             {/* Top Typography: Hey, there */}
             <motion.div 
