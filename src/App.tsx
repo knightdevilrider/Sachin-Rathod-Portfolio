@@ -527,7 +527,7 @@ export default function App() {
               <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none translate-x-0 sm:-translate-x-[5vw] lg:-translate-x-[50px] xl:-translate-x-[70px]">
                 Hey,
               </h2>
-              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none pb-[10px] -translate-x-[45px] xs:-translate-x-[60px] sm:translate-x-0">
+              <h2 className="font-serif italic font-normal text-4xl sm:text-6xl md:text-[90px] lg:text-[130px] text-charcoal/90 leading-none tracking-tight select-none pb-[10px] -translate-x-[15px] xs:-translate-x-[30px] sm:translate-x-0">
                 there
               </h2>
             </motion.div>
