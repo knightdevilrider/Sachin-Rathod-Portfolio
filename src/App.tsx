@@ -17,7 +17,11 @@ import {
   CheckCircle2,
   ExternalLink,
   Menu,
-  X
+  X,
+  Briefcase,
+  MapPin,
+  ShieldCheck,
+  ChevronRight
 } from "lucide-react";
 
 // --- Components ---
@@ -56,7 +60,7 @@ const Navbar = () => {
   const [isDone, setIsDone] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navItems = ["Home", "Work", "About", "Service", "Testimonial"];
+  const navItems = ["Home", "Work", "Experience", "About", "Service", "Testimonial"];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -264,7 +268,103 @@ const Navbar = () => {
   );
 };
 
-const ProjectCard = ({ project, index }: { project: any, index: number, key?: any }) => {
+// --- Experience Card Component ---
+
+interface ExperienceItem {
+  role: string;
+  company: string;
+  duration: string;
+  location: string;
+  summary: string;
+  bullets: string[];
+  credential: string;
+  tags: string[];
+  index: number;
+}
+
+const ExperienceCard = ({ role, company, duration, location, summary, bullets, credential, tags, index }: ExperienceItem) => (
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-80px" }}
+    transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
+    className="relative group"
+  >
+    {/* Timeline dot + line */}
+    <div className="absolute left-0 top-0 bottom-0 hidden md:flex flex-col items-center w-10">
+      <div className="w-3 h-3 rounded-full bg-gold mt-[22px] shrink-0 shadow-sm shadow-gold/40 group-hover:scale-125 transition-transform duration-300" />
+      {index === 0 && (
+        <div className="w-px flex-1 bg-gradient-to-b from-gold/40 to-transparent mt-2" />
+      )}
+    </div>
+
+    {/* Card body */}
+    <div className="md:ml-14 bg-white border border-charcoal/5 rounded-[2rem] overflow-hidden hover:shadow-2xl hover:shadow-charcoal/5 transition-all duration-500">
+      <div className="p-8 md:p-10">
+
+        {/* Header row */}
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-5">
+          <div>
+            <span className="text-xs font-mono text-gold uppercase tracking-widest mb-1.5 block">
+              Internship
+            </span>
+            <h3 className="text-xl md:text-2xl font-display font-bold leading-tight text-charcoal">
+              {role}
+            </h3>
+            <p className="text-base font-semibold text-charcoal/70 mt-0.5">{company}</p>
+          </div>
+          <div className="flex flex-col items-start sm:items-end gap-1.5 shrink-0">
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-charcoal/50 bg-warm-accent px-3 py-1 rounded-full border border-charcoal/5">
+              <Briefcase className="w-3 h-3" />
+              {duration}
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-charcoal/40">
+              <MapPin className="w-3 h-3" />
+              {location}
+            </span>
+          </div>
+        </div>
+
+        {/* Summary */}
+        <p className="text-sm text-charcoal/60 leading-relaxed mb-6 border-l-2 border-gold/40 pl-4 italic">
+          {summary}
+        </p>
+
+        {/* Bullet points */}
+        <div className="space-y-3 mb-8">
+          {bullets.map((b, i) => (
+            <div key={i} className="flex items-start gap-3">
+              <ChevronRight className="w-4 h-4 text-gold shrink-0 mt-0.5" />
+              <p className="text-sm text-charcoal/80 leading-relaxed">{b}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Footer: tags + credential */}
+        <div className="border-t border-charcoal/5 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-[10px] font-medium bg-warm-accent px-2.5 py-1 rounded-md text-charcoal/60 uppercase tracking-wider"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="inline-flex items-center gap-1.5 text-[10px] font-mono text-charcoal/35 bg-warm-accent/60 border border-charcoal/5 rounded-xl px-3 py-1.5 shrink-0">
+            <ShieldCheck className="w-3 h-3 text-green-500 shrink-0" />
+            <span>{credential}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </motion.div>
+);
+
+// --- Project Card ---
+const ProjectCard = ({ project, index }: { project: any; index: number; key?: any }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -644,6 +744,66 @@ export default function App() {
         </div>
       </section>
 
+
+      {/* ----------- EXPERIENCE SECTION ----------- */}
+      <section id="experience" className="py-32 bg-warm-accent/50 border-y border-charcoal/5 relative overflow-hidden">
+        {/* Subtle ambient glow */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 blur-[120px] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+          {/* Section header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-20"
+          >
+            <span className="text-xs font-mono text-gold uppercase tracking-widest mb-3 block">Career Journey</span>
+            <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tighter uppercase text-charcoal leading-none">
+              Experience
+            </h2>
+            <p className="text-charcoal/50 mt-4 max-w-lg text-sm leading-relaxed">
+              Hands-on industry engagements translating data and strategy into measurable business outcomes.
+            </p>
+          </motion.div>
+
+          {/* Timeline cards */}
+          <div className="relative space-y-10 md:space-y-14">
+            <ExperienceCard
+              index={0}
+              role="Business Analyst Intern"
+              company="Unified Mentor Pvt. Ltd."
+              duration="Mar 2026 – Sep 2026"
+              location="Remote"
+              summary="ISO 9001:2015 certified ed-tech and career-readiness platform providing hands-on industry project mentorship."
+              bullets={[
+                "Executed end-to-end business analysis workflows across multiple domain projects, translating raw datasets into actionable business insights and executive recommendations.",
+                "Authored Business Requirement Documents (BRDs), functional specifications, user stories, and process workflows to align project deliverables with stakeholder objectives.",
+                "Performed data collection, cleaning, and exploratory data analysis (EDA) using Excel, SQL, and Power BI to track KPIs and build interactive reporting dashboards."
+              ]}
+              credential="CIN: U85500HR2023PTC115118 · Issued: Sep 2026"
+              tags={["BRD", "SQL", "Power BI", "Excel", "EDA", "Stakeholder Alignment"]}
+            />
+
+            <ExperienceCard
+              index={1}
+              role="Business Analyst Intern"
+              company="AperioHub Advisory"
+              duration="Apr 2026 – May 2026"
+              location="Remote · Singapore"
+              summary="Singapore-based strategic advisory and experiential learning firm specializing in market entry, business model design, and cross-border growth."
+              bullets={[
+                "Conducted structured market research, competitive benchmarking, and business model analysis for strategic advisory projects within a cross-functional remote cohort.",
+                "Synthesized qualitative and quantitative findings into structured strategic recommendations and client-ready deliverables under near-peer mentor guidance.",
+                "Collaborated across time zones to scope problem statements, validate assumptions, and present final analytical findings."
+              ]}
+              credential="UEN: 53517575B · Cert: e9f25645-91c2-425e-84e8-651d30eeb94d"
+              tags={["Market Research", "Competitive Benchmarking", "Business Strategy", "Data Synthesis"]}
+            />
+          </div>
+        </div>
+      </section>
       {/* Projects */}
       <section id="work" className="py-32 bg-warm-bg relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
